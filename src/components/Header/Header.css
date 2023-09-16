@@ -1,0 +1,45 @@
+header {
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logobox , .menubox {
+    height: 60px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menubox {
+    display: flex;
+    
+}
+
+.menubox .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.menubox .menu a {
+    text-align:center;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.menubox .menu .active {
+    color: var(--bold);
+}
+
+header , header * {
+    z-index: 5;
+}

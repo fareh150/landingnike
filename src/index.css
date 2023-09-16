@@ -1,0 +1,31 @@
+:root {
+    --bold : #F45D75 ;
+    --fondo : #FFFFFF ;
+    --text : #3B3B3B;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--secondary);
+}
+
+li{
+    list-style-type: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+
+a:visited{
+    color: inherit;
+}

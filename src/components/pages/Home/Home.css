@@ -1,0 +1,96 @@
+main {
+    min-height: 75vh;
+    display: flex;
+    margin-top: 15vh;
+}
+
+.sneakerbox , .textbox {
+    width: 50%;
+    height: 75vh;
+}
+
+.colorbox {
+    clip-path: polygon(0 0, 27% 0, 71% 100%, 0% 100%);
+    background-color: var(--bold);
+    height: 100%;
+    width: 100%;
+}
+
+.sneakerbox .sneaker {
+    position: absolute;
+    top: 0;
+    left:0;
+    rotate: 20deg;
+    transform: rotateY(180deg);
+    height: 700px;
+    width: auto;
+    transition: all 0.6s linear;
+}
+
+/*maketado text*/
+
+.textbox ul {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    gap: 15px;
+}
+
+.textbox h2 {
+    font-size: 80px;
+    text-shadow: 0px 3px 3px black;
+}
+
+.textbox .colortext {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--bold);
+    text-shadow: none;
+}
+
+.line1 {
+    margin-top: 20px;
+    width: 60px;
+}
+
+.line1 , .line2 {
+    height: 5px;
+    background-color: var(--bold);
+}
+
+.line2 {
+    width: 50px;
+}
+
+.text {
+    font-size: medium;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1170px){
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .sneakerbox , .textbox {
+        width: 100%;
+    }
+
+    .sneakerbox {
+        height: 500px;
+    }
+    
+    .sneakerbox .sneaker{
+        height: 500px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;   
+        rotate: 0deg;
+        transform: rotateY(0deg);
+        transition: all 0.6s linear;
+    }
+}
